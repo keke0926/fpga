@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_files": 491,
+  "current_test_receipts": 6,
+  "report_families": 112,
+  "analysis_checks": 114,
+  "bitstream": {
+    "path": "D:\\fpga\\work\\ar0135_hdmi720\\logs\\development_20261104\\native_detection_v16\\release\\Ti60_Demo_local_detection_v16_I3.bit",
+    "sha256": "25ee46a93e4ece2246cd455c1634a980ba864d6f4a7dc671e482291fc6cc1339",
+    "bytes": 3143607
+  },
+  "setup_ns": 0.102,
+  "hold_ns": 0.032,
+  "baseline_v15_intact": true,
+  "hardware_actions": 0,
+  "hardware_verified": false
+}

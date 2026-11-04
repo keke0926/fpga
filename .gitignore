@@ -1,0 +1,5 @@
+project/outflow/
+project/work_pnr/
+project/work_syn/
+__pycache__/
+*.pyc

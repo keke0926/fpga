@@ -1,0 +1,79 @@
+{
+  "recorded_at": "2026-11-04T03:29:27.463688+08:00",
+  "status": "BOARD_FUNCTIONS_CONFIRMED_DETECTION_FAILED",
+  "user_quote": "已经下载好了。实际测试：1、功能都正常；2、弱边框少了一些但是还是有点乱；3、存了螺母正常件后，实测残缺件显示未见候选，甚至测试完全不同类型的法兰盘也是未见候选",
+  "bitstream": {
+    "path": "D:\\fpga\\work\\ar0135_hdmi720\\logs\\development_20261104\\native_detection_v16\\release\\Ti60_Demo_local_detection_v16_I3.bit",
+    "sha256": "25ee46a93e4ece2246cd455c1634a980ba864d6f4a7dc671e482291fc6cc1339",
+    "bytes": 3143607
+  },
+  "image_identity_basis": "User download confirmation; no configuration readback",
+  "hardware_functional_user_confirmed": true,
+  "defect_accuracy_accepted": false,
+  "tests": [
+    {
+      "reference": "normal nut",
+      "observation": "damaged nut",
+      "result": "未见候选"
+    },
+    {
+      "reference": "normal nut",
+      "observation": "different flange",
+      "result": "未见候选"
+    }
+  ],
+  "weak_edges": "User sees some reduction, but still visually cluttered",
+  "photos": [
+    {
+      "original": "C:\\Users\\10715\\Documents\\xwechat_files\\wxid_iz8whq3w7ekg12_41d8\\temp\\RWTemp\\2026-11\\9e20f478899dc29eb19741386f9343c8\\e7110e625c5ec05a9b675dadce537a85.jpg",
+      "archived": "D:\\fpga\\work\\ar0135_hdmi720\\logs\\development_20261104\\native_detection_v16\\board\\evidence\\damaged_nut_no_candidate.jpg",
+      "sha256": "70dcca8ea5784c72b83d0c9a7b51d1000880b54baf264018065c18344985563c",
+      "encoded_size": [
+        4032,
+        3024
+      ],
+      "bytes": 3248327,
+      "evidence_type": "phone_photo_of_display_not_native_frame",
+      "displayed_status": "未见候选",
+      "display_count": 0,
+      "display_pages": "00/00",
+      "display_fps": 0
+    },
+    {
+      "original": "C:\\Users\\10715\\Documents\\xwechat_files\\wxid_iz8whq3w7ekg12_41d8\\temp\\RWTemp\\2026-11\\9e20f478899dc29eb19741386f9343c8\\b0be2f0acbc56a942b37fbf9035999b8.jpg",
+      "archived": "D:\\fpga\\work\\ar0135_hdmi720\\logs\\development_20261104\\native_detection_v16\\board\\evidence\\different_flange_no_candidate.jpg",
+      "sha256": "524f56fd288a47d7c77d0a9ee392d2d19310f4fef3d025a9d9ab65ed35963eda",
+      "encoded_size": [
+        4032,
+        3024
+      ],
+      "bytes": 4903473,
+      "evidence_type": "phone_photo_of_display_not_native_frame",
+      "displayed_status": "未见候选",
+      "display_count": 0,
+      "display_pages": "00/00",
+      "display_fps": 0
+    }
+  ],
+  "serial_evidence": [
+    {
+      "path": "D:\\fpga\\work\\ar0135_hdmi720\\logs\\development_20261104\\native_detection_v16\\board\\v16_feedback_20261104_initial.json",
+      "scene": "damaged nut",
+      "scene_identity": "User explicitly confirmed the retained frozen scene",
+      "candidate_points": 366,
+      "clean_cell_points": 335,
+      "published_regions": 0,
+      "retained_poses": 5,
+      "inspection_phase": 14,
+      "inspection_error": 0,
+      "read_only": true
+    }
+  ],
+  "limits": [
+    "No native reference/observation pair for these trials",
+    "Different-part compatibility must not be inferred from zero defect candidates",
+    "Frozen result FPS zero is expected",
+    "No measured V16 detection latency or statistical accuracy",
+    "Aggregate counts do not reveal spatial distribution or establish the source of lost defect evidence"
+  ]
+}

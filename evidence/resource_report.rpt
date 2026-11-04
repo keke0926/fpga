@@ -1,0 +1,427 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2025.1.110.5.9 
+Date: Wed Nov  4 02:56:17 2026
+
+Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F225
+Top-level Entity Name: Ti60_Demo
+
+---------- Resource Summary (begin) ----------
+Inputs: 72 / 1703 (4.23%)
+Outputs: 475 / 2267 (20.95%)
+Global Clocks (GBUF): 14 / 32 (43.75%)
+Regional Clocks (RBUF): 0 / 32 (0.00%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 0 / 8 (0.00%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 59460 / 60800 (97.80%)
+	XLRs needed for Logic: 29545 / 60800 (48.59%)
+	XLRs needed for Logic + FF: 11700 / 60800 (19.24%)
+	XLRs needed for Adder: 5449 / 60800 (8.96%)
+	XLRs needed for Adder + FF: 1104 / 60800 (1.82%)
+	XLRs needed for FF: 8485 / 60800 (13.96%)
+	XLRs needed for SRL8: 1057 / 14720 (7.18%)
+	XLRs needed for SRL8+FF: 0 / 14720 (0.00%)
+	XLRs needed for Routing: 2120 / 60800 (3.49%)
+Memory Blocks: 241 / 256 (94.14%)
+DSP Blocks: 64 / 160 (40.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Packer Summary (begin) ----------
+
+	DSP48 blocks required to legally pack design: 64
+	DSP48 blocks recoverable by optimizing:
+		-> DSP24/12 control signals & parameters: 4
+	Best case scenario DSP count after optimizing: 60
+
+---------- DSP Packer Summary (end) ----------
+
+
+---------- DSP48 Block Information (begin) ----------
+
++--------------------------------------------------------------------------------------------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+|                                                              NAME                                                              |  MODE  | SIGNED | SHIFTER | M_SEL |    N_SEL     | W_SEL | CASCOUT_SEL |
++--------------------------------------------------------------------------------------------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+|                           u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_28                            | NORMAL |  true  |  false  |   P   |    CASCIN    |   X   |      P      |
+|                           u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_29                            | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|                      u_ar0135_capture_link/Gen_Local.local_reference/features/features/arithmetic/mult_36                      | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                    u_ar0135_capture_link/Gen_Local.local_reference/features/features/arithmetic/n337_pp_0x0                    | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                      u_ar0135_capture_link/Gen_Local.local_reference/features/features/arithmetic/mult_3                       | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                    u_ar0135_capture_link/Gen_Local.local_reference/features/features/arithmetic/n337_pp_1x0                    | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|             u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/coarse/builder/mult_23              | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|       u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/coarse/search/coefficients/mult_28        | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|         u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/refine/coeff/mult_46          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|            u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/bridge/mult_11             | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|         u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/native_score/mult_21          | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+| u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/native_score/sample/transport/mult_21 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/native_score/sample/product_pp_0x0   | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/native_score/sample/product_pp_1x0   | NORMAL |  true  |  false  |   P   | CASCIN_ASR18 |   X   |      P      |
+|      u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/evaluator/native_score/score/mult_15       | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/scorer/mult_145                 | NORMAL |  true  |  false  |   P   |    CASCIN    |   X   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/scorer/mult_146                 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/scorer/mult_147                 | NORMAL |  true  |  false  |   P   |    CASCIN    |   X   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/registration/core/scorer/mult_148                 | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/direction/mult_9                  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/loader/mult_101                  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_47                  | NORMAL |  true  |  false  |   P   |      C       |   P   |      P      |
+|                  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_59                  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_60                  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                 u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_141                  | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                             u_roi_digit_app/u_engine/core/mult_505                                             | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                             u_roi_digit_app/u_engine/core/mult_533                                             | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                             u_roi_digit_app/u_engine/core/mult_721                                             | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                    u_roi_digit_app/u_engine/core/u_local_threshold/mult_35                                     | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                    u_roi_digit_app/u_engine/core/u_local_threshold/mult_34                                     | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                     u_roi_digit_app/u_engine/core/u_shape/mult_808_pp_0x1                                      | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
+|                                          u_roi_digit_app/u_engine/core/u_shape/mult_4                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_22                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_34                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_42                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_45                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_48                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_53                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_58                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_61                                          | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_803                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_804                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                     u_roi_digit_app/u_engine/core/u_shape/mult_808_pp_0x0                                      | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                     u_roi_digit_app/u_engine/core/u_shape/mult_814_pp_0x0                                      | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_821                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_828                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_829                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_837                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                         u_roi_digit_app/u_engine/core/u_shape/mult_839                                         | NORMAL | false  |  false  |   P   |      C       |   P   |      P      |
+|                                     u_roi_digit_app/u_engine/core/u_shape/mult_814_pp_0x1                                      | NORMAL | false  |  false  |   P   | CASCIN_LSR18 |   X   |      P      |
++--------------------------------------------------------------------------------------------------------------------------------+--------+--------+---------+-------+--------------+-------+-------------+
+
+----------- DSP48 Block Information (end) ----------
+
+
+---------- DSP24 Block Information (begin) ----------
+
++-------------------------------------------------------------------------------------------------+--------+---------+-------+-------+-------+-------------+----------------+------------------+
+|                                              NAME                                               | SIGNED | SHIFTER | M_SEL | N_SEL | W_SEL | CASCOUT_SEL | CTL_SIG_SET_ID | PARAMETER_SET_ID |
++-------------------------------------------------------------------------------------------------+--------+---------+-------+-------+-------+-------------+----------------+------------------+
+|            u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_3             | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|            u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_4             | false  |  false  |   P   |   C   |   P   |      P      |       1        |        1         |
+|            u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_6             | false  |  false  |   P   |   C   |   P   |      P      |       2        |        2         |
+|            u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_75            | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|            u_ar0135_capture_link/Gen_Local.local_reference/features/features/mult_9             | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_13   | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|      u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/mult_55       | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/histogram/mult_6  | false  |  false  |   P   |   C   |   P   |      P      |       3        |        3         |
+| u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/histogram/mult_71  | false  |  false  |   P   |   C   |   P   |      P      |       4        |        3         |
+| u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/histogram/mult_163 | false  |  false  |   P   |   C   |   P   |      P      |       5        |        3         |
+|   u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_8   | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_19   | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|  u_ar0135_capture_link/Gen_Local.local_reference/registration/difference/core/reducer/mult_112  | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|                             u_roi_digit_app/u_engine/core/mult_506                              | false  |  false  |   P   |   C   |   P   |      P      |       6        |        3         |
+|                             u_roi_digit_app/u_engine/core/mult_540                              | false  |  false  |   P   |   C   |   P   |      P      |       7        |        2         |
+|                          u_roi_digit_app/u_engine/core/u_shape/mult_5                           | false  |  false  |   P   |   C   |   P   |      P      |       8        |        2         |
+|                          u_roi_digit_app/u_engine/core/u_shape/mult_39                          | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
+|                         u_roi_digit_app/u_engine/core/u_shape/mult_822                          | false  |  false  |   P   |   C   |   P   |      P      |       9        |        4         |
+|                         u_roi_digit_app/u_engine/core/u_shape/mult_825                          | false  |  false  |   P   |   C   |   P   |      P      |       9        |        4         |
+|                u_ar0135_capture_link/Gen_Local.local_reference/features/mult_103                | false  |  false  |   P   |   C   |   P   |      P      |       0        |        0         |
++-------------------------------------------------------------------------------------------------+--------+---------+-------+-------+-------+-------------+----------------+------------------+
+* DSP24/DSP12 that share a CTL_SIG_SET_ID have identical control signals (CE, CLK, etc).
+* DSP24/DSP12 that share a PARAMETER_SET_ID have identical netlist parameters (DSP mode, registers, polarity, etc).
+* If fractured DSP primitives share both CTL_SIG_SET_ID and PARAMETER_SET_ID, they can be legally packed together.
+* See output file dsp_control_sets.csv for detailed breakdown. 
+
+----------- DSP24 Block Information (end) ----------
+
+
+---------- Simple Dual Port RAM Information (begin) ----------
+
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|                                                         NAME                                                          | MODE | READ_WIDTH | WRITE_WIDTH |  WRITE_MODE  | OUTPUT_REG |
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ar/ram__D$1          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_aw/ram__D$1          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$c12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$d12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$e12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$f12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_wr/ram__D$g1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|            ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_ack/ram            | SDP  |     2      |      2      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$c12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$d12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$e12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/fifo_rd/ram__D$f1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|          ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/ac_fifo/ram__D$b1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|  ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$2  | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$b12 | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$12  | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+| ddr3_ctl_axi/u_efx_ddr3_soft_controller/genblk1.inst_ddr3_axi/inst_efx_ddr3/top_mc/controller_main/map_ram/ram__D$c1  | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|                       u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                       | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                       | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                      | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                      | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                      | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                      | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$g1                       | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_FIFO_W8.u_W0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$f12                      | SDP  |     16     |      1      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$12                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$f12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$g1                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                      u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12                      | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                       u_axi4_ctrl/Gen_RFIFO_8.u_R0_FIFO_8/u_efx_fifo_top/xefx_fifo_ram/ram__D$2                       | SDP  |     1      |     16      | READ_UNKNOWN |   false    |
+|                                   u_ar0135_capture_link/part_results/records__D$12                                    | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                    u_ar0135_capture_link/part_results/records__D$2                                    | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                   u_ar0135_capture_link/part_results/records__D$c1                                    | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                   u_ar0135_capture_link/part_results/records__D$b12                                   | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                          u_lvds_sobel_link/control_ram__D$2                                           | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                          u_lvds_sobel_link/control_ram__D$12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                          u_lvds_sobel_link/control_ram__D$g1                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                              u_lvds_sobel_link/error_ram                                              | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                         u_lvds_sobel_link/control_ram__D$c12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                         u_lvds_sobel_link/control_ram__D$d12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                         u_lvds_sobel_link/control_ram__D$e12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                         u_lvds_sobel_link/control_ram__D$f12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                     u_lvds_sobel_link/median_inst/video_ram__D$2                                      | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                     u_lvds_sobel_link/median_inst/video_ram__D$12                                     | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                     u_lvds_sobel_link/median_inst/video_ram__D$b1                                     | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                  u_lvds_sobel_link/median_inst/window_inst/rows__D$2                                  | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                  u_lvds_sobel_link/median_inst/window_inst/rows__D$1                                  | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/gradient_inst/video_ram__D$2                                     | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/gradient_inst/video_ram__D$12                                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/gradient_inst/video_ram__D$b1                                    | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/gradient_inst/edge_inst/window_inst/rows__D$2                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/gradient_inst/edge_inst/window_inst/rows__D$1                            | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$l12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$12                                     | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                     u_lvds_sobel_link/dynamic_inst/histogram__D$2                                     | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                   u_lvds_sobel_link/dynamic_inst/frame_table/memory                                   | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$c12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$d12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$e12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$f12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                              u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$2                               | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$m1                                     | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                         u_lvds_sobel_link/control_ram__D$b12                                          | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$k12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$j12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$i12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$h12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$g12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_lvds_sobel_link/dynamic_inst/histogram__D$b12                                    | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                              u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$12                              | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$f12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$12                             | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$g12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$h12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$i12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$j12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$k12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$l12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                              u_lvds_sobel_link/front_inst/first_delay_inst/packets__D$m1                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$2                              | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$f12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                u_lvds_sobel_link/front_inst/nms_window_inst/rows__D$2                                 | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$g12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$h12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$i12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$j12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$k12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                            u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$l12                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/support_delay_inst/packets__D$m1                             | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                u_lvds_sobel_link/front_inst/nms_window_inst/rows__D$12                                | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                 u_lvds_sobel_link/front_inst/support_window_inst/rows                                 | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                               u_lvds_sobel_link/front_inst/nms_window_inst/rows__D$b12                                | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                u_lvds_sobel_link/front_inst/nms_window_inst/rows__D$d1                                | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                               u_lvds_sobel_link/front_inst/nms_window_inst/rows__D$c12                                | SDP  |     10     |     10      |  READ_FIRST  |   false    |
+|                                     u_lvds_sobel_link/front_inst/seed_window/rows                                     | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$b12                              | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$g12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                              u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$2                               | SDP  |     4      |      4      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$h12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$i12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$j12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$k12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$l12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                             u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$m12                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                              u_lvds_sobel_link/front_inst/final_delay_inst/packets__D$n1                              | SDP  |     5      |      5      |  READ_FIRST  |   false    |
+|                                    u_roi_digit_app/PrivateFont.u_font/memory__D$1                                     | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                          u_roi_digit_app/u_canny_title/mux_4                                          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$b0312                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$0b312                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$030e12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$030d12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$030c12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$030b12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$03012                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$0b32                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$b03g1                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$0302                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3b12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/scratch/mask_memory__D$3                                   | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/gray_memory__D$32                                   | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$b03e12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$b03d12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$b03c12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$b03b12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$b032                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0g1                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0e12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0d12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0c12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0b12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c012                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$c0f12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$030g1                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/gray_memory__D$c02                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$030f12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$b03f12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$3b12                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3c12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3d12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3e12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3f12                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$0b3g1                                 | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/gray_memory__D$312                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$3c12                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$3d12                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$3e12                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/scratch/gray_memory__D$3f12                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/gray_memory__D$3g1                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/mask_memory__D$b03                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/mask_memory__D$0b3                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/mask_memory__D$c0                                   | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                u_roi_digit_app/u_engine/scratch/foreground_memory__D$3                                | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/scratch/mask_memory__D$030                                  | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                               u_roi_digit_app/u_engine/scratch/foreground_memory__D$b03                               | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                               u_roi_digit_app/u_engine/scratch/foreground_memory__D$0b3                               | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                               u_roi_digit_app/u_engine/scratch/foreground_memory__D$c0                                | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                               u_roi_digit_app/u_engine/scratch/foreground_memory__D$030                               | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/core/template_memory__D$2                                   | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$12                                    | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$b12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$c12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                              u_roi_digit_app/u_engine/core/u_local_threshold/column_sums                              | SDP  |     16     |     16      |  READ_FIRST  |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$d12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$e12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$f12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$g12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$h12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$i12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$j12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$k12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/template_memory__D$l12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                  u_roi_digit_app/u_engine/core/template_memory__D$m1                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/u_shape/shape_rom__D$2                                  | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                 u_roi_digit_app/u_engine/core/u_shape/shape_rom__D$1                                  | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                   u_roi_digit_app/u_engine/core/u_shape/queue__D$1                                    | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/u_shape/queue__D$2                                    | SDP  |     8      |      8      |  READ_FIRST  |   false    |
+|                                    u_roi_digit_app/u_engine/core/queue_memory__D$2                                    | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$c12                                   | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$d12                                   | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$e12                                   | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                  u_roi_digit_app/u_engine/core/template_memory__D$12                                  | SDP  |     1      |      1      | READ_UNKNOWN |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$g1                                    | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$f12                                   | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                   u_roi_digit_app/u_engine/core/queue_memory__D$b12                                   | SDP  |     2      |      2      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview1__D$030                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview1__D$0b3                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                            u_roi_digit_app/overview1__D$c0                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview1__D$b03                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                            u_roi_digit_app/overview1__D$3                                             | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview0__D$030                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview0__D$0b3                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                            u_roi_digit_app/overview0__D$c0                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                            u_roi_digit_app/overview0__D$3                                             | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                           u_roi_digit_app/overview0__D$b03                                            | SDP  |     1      |      1      |  READ_FIRST  |   false    |
+|                                    u_roi_digit_app/PrivateFont.u_font/memory__D$2                                     | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                      u_part_assist/PrivateFont.font/memory__D$2                                       | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                      u_part_assist/PrivateFont.font/memory__D$1                                       | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                            u_status_osd/u_font/memory__D$1                                            | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
+|                                            u_status_osd/u_font/memory__D$2                                            | SDP  |     8      |      8      | READ_UNKNOWN |   false    |
++-----------------------------------------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+
+----------- Simple Dual Port RAM Information (end) ----------
+
+
+---------- True Dual Port RAM Information (begin) ----------
+
++------------------------------------------------------+------+--------------+---------------+--------------+--------------+--------------+---------------+--------------+--------------+
+|                         NAME                         | MODE | READ_WIDTH_A | WRITE_WIDTH_A | WRITE_MODE_A | OUTPUT_REG_A | READ_WIDTH_B | WRITE_WIDTH_B | WRITE_MODE_B | OUTPUT_REG_B |
++------------------------------------------------------+------+--------------+---------------+--------------+--------------+--------------+---------------+--------------+--------------+
+| u_roi_digit_app/u_engine/core/u_shape/visited__D$030 | TDP  |      1       |       1       |  READ_FIRST  |    false     |      1       |       1       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_engine/core/u_shape/visited__D$c0  | TDP  |      1       |       1       |  READ_FIRST  |    false     |      1       |       1       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_engine/core/u_shape/visited__D$0b3 | TDP  |      1       |       1       |  READ_FIRST  |    false     |      1       |       1       |  READ_FIRST  |    false     |
+|  u_roi_digit_app/u_engine/core/u_shape/visited__D$3  | TDP  |      1       |       1       |  READ_FIRST  |    false     |      1       |       1       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_engine/core/u_shape/visited__D$b03 | TDP  |      1       |       1       |  READ_FIRST  |    false     |      1       |       1       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[0].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[0].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[1].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[1].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[2].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[2].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[3].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[3].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[4].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[4].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[5].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[5].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[6].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[6].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[7].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[7].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[8].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[8].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[9].bank0_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[9].bank1_ram  | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[10].bank0_ram | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[10].bank1_ram | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[11].bank0_ram | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
+| u_roi_digit_app/u_descriptors/gen_lane[11].bank1_ram | TDP  |      4       |       4       |  READ_FIRST  |    false     |      4       |       4       |  READ_FIRST  |    false     |
++------------------------------------------------------+------+--------------+---------------+--------------+--------------+--------------+---------------+--------------+--------------+
+
+----------- True Dual Port RAM Information (end) ----------
+
+
+
+---------- GBUFCE Assignments (begin) ----------
+
+
++---------------+----------+----------+
+|   Clock Net   | GBUFCE_X | GBUFCE_Y |
++---------------+----------+----------+
+|    clk_27m    |   218    |   163    |
+|  clk_lvds_1x  |   218    |   162    |
+|  clk_lvds_7x  |   218    |   158    |
+|   clk_pixel   |    1     |   159    |
+| clk_pixel_10x |    1     |   164    |
+|    clk_sys    |    1     |   162    |
+|   cmos_pclk   |   111    |   322    |
+|   core_clk    |   218    |   164    |
+| dsi_byteclk_i |   112    |    1     |
+| dsi_serclk_i  |   107    |    1     |
+| dsi_txcclk_i  |   108    |    1     |
+|    tac_clk    |   111    |    1     |
+|   tdqss_clk   |   110    |    1     |
+|    twd_clk    |   218    |   159    |
++---------------+----------+----------+
+
+
+----------- GBUFCE Assignments (end) ----------
+
+
+Elapsed time for routing: 0 hours 1 minutes 2 seconds
+Elapsed time for entire flow: 0 hours 1 minutes 23 seconds

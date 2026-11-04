@@ -1,0 +1,240 @@
+<efx:project xmlns:efx="http://www.efinixinc.com/enf_proj" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Ti60_Demo" description="" sw_version="2025.1.110.5.9" last_run_state="pass" last_run_flow="bitstream" config_result_in_sync="sync" design_ood="sync" place_ood="sync" route_ood="sync" xsi:schemaLocation="http://www.efinixinc.com/enf_proj enf_proj.xsd" last_change="1793732718">
+    <efx:device_info>
+        <efx:family name="Titanium" />
+        <efx:device name="Ti60F225" />
+        <efx:timing_model name="I3" />
+    </efx:device_info>
+    <efx:design_info def_veri_version="verilog_2k" def_vhdl_version="vhdl_2008">
+        <efx:top_module name="example_top" />
+        <efx:design_file name="example_top.v" version="default" library="default" />
+        <efx:design_file name="src/ddr_rw_ctrl.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_16bit.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/CMOS_Capture_RAW_Gray.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/I2C_MT9M001_Gray_Config.v" version="default" library="default" />
+        <efx:design_file name="src/lcd_para.v" version="default" library="default" />
+        <efx:design_file name="src/lcd_driver.v" version="default" library="default" />
+        <efx:design_file name="src/hdmi_ip/hdmi_tx_ip.v" version="default" library="default" />
+        <efx:design_file name="src/hdmi_ip/encode.v" version="default" library="default" />
+        <efx:design_file name="src/hdmi_ip/serdes_4b_10to1.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/I2C_SC130GS_12801024_4Lanes_Config.v" version="default" library="default" />
+        <efx:design_file name="src/PWMLite.v" version="default" library="default" />
+        <efx:design_file name="src/lcd_display.v" version="default" library="default" />
+        <efx:design_file name="src/dsi/dsi_init.v" version="default" library="default" />
+        <efx:design_file name="src/Sensor_Image_XYCrop.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/i2c_timing_ctrl_reg16_dat16.v" version="default" library="default" />
+        <efx:design_file name="src/cmos_i2c/I2C_AR0135_1280720_Config.v" version="default" library="default" />
+        <efx:design_file name="src/axi/AXI4_AWARMux.v" version="default" library="default" />
+        <efx:design_file name="src/lvds/LCDDual2LVDS.v" version="default" library="default" />
+        <efx:design_file name="src/axi/axi4_ctrl.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/window3x3_gray.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/sobel3x3_core.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/edge_detect_gray.v" version="default" library="default" />
+        <efx:design_file name="rtl/video/video_sobel_display.v" version="default" library="default" />
+        <efx:design_file name="rtl/system/video_sobel_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_crc32.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_uart_rx.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_uart_tx.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_record_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_source_gate.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_frame_freezer.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/effective_display_fps.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_tile_buffer.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/capture_stream_controller.v" version="default" library="default" />
+        <efx:design_file name="rtl/capture/ar0135_capture_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/system/reset_sync_n.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/median9_core.v" version="default" library="default" />
+        <efx:design_file name="rtl/video/video_median_preprocess.v" version="default" library="default" />
+        <efx:design_file name="rtl/system/video_median_sobel_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/control/runtime_uart_demux.v" version="default" library="default" />
+        <efx:design_file name="rtl/control/runtime_uart_response.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/dynamic_threshold_raster.v" version="default" library="default" />
+        <efx:design_file name="rtl/image/dynamic_threshold_frame_table.v" version="default" library="default" />
+        <efx:design_file name="rtl/video/video_sobel_gradient_stream.v" version="default" library="default" />
+        <efx:design_file name="rtl/system/video_median_dynamic_sobel_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/board_front_v1/video_median_board_front_link.v" version="default" library="default" />
+        <efx:design_file name="rtl/board_front_v1/video_nms_weak_stream.v" version="default" library="default" />
+        <efx:design_file name="rtl/board_front_v1/video_sobel_gradient_direction_stream.v" version="default" library="default" />
+        <efx:design_file name="rtl/board_front_v1/window3x3_word.v" version="default" library="default" />
+        <efx:design_file name="rtl/keys_osd/runtime_video_control_keys.v" version="default" library="default" />
+        <efx:design_file name="rtl/keys_osd/button_debounce.v" version="default" library="default" />
+        <efx:design_file name="rtl/keys_osd/video_status_osd.v" version="default" library="default" />
+        <efx:design_file name="rtl/keys_osd/fps_chinese_ink.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/roi_digit_engine.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/video_roi_digit_app.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/multi_target_engine.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/cn_font_rom.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/local_threshold33.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/shape_geometry_engine.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/target_descriptor_ram.v" version="default" library="default" />
+        <efx:design_file name="rtl/part_assist/part_result_control.v" version="default" library="default" />
+        <efx:design_file name="rtl/part_assist/part_assist_overlay.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/canny_scratch_adapter.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/canny_shared_scratch.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/multi_target_core.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/shared_vision_engine.v" version="default" library="default" />
+        <efx:design_file name="rtl/part_assist/canny_roi_control.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/canny_roi_scheduler.v" version="default" library="default" />
+        <efx:design_file name="rtl/shared_vision/canny_title_rom.v" version="default" library="default" />
+        <efx:design_file name="rtl/persistence/part_persistence_kernel.v" version="default" library="default" />
+        <efx:design_file name="rtl/persistence/part_persistence_service.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_ddr_arbiter.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_ddr_mailbox.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_local_keys.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_local_reference.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_feature_frame.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_feature_tile.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_median_tile.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_local_normalize.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_local_status_ink.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_auto_coarse_pipeline.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_auto_native_pipeline.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_chamfer_pipeline.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_coarse_builder.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_coarse_coeff.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_coarse_distance.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_coarse_search.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_coarse_support.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_family_native_eval.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_family_refine.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_feature_transport.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_native_pose_bridge.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_pose_sample.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_pose_scan_score.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_pose_score.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_refine_coeff.v" version="default" library="default" />
+        <efx:design_file name="rtl/onboard_part/part_registration_records.v" version="default" library="default" />
+        <efx:design_file name="rtl/apps/cn_font_shared.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_compare_tile_load.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_compare_tile_pipeline.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_compare_tile_reduce.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_difference_frame.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_direction_feature.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_histogram_tile.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_region_publish.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_pose_export.v" version="default" library="default" /><efx:design_file name="rtl/onboard_part/part_local_inspection.v" version="default" library="default" /><efx:design_file name="rtl/control/frame_freeze_control.v" version="default" library="default" />
+        <efx:design_file name="rtl/control/runtime_control_rx.v" version="default" library="default" />
+        <efx:top_vhdl_arch name="" />
+    </efx:design_info>
+    <efx:constraint_info>
+        <efx:sdc_file name="capture_private.sdc" />
+        <efx:sdc_file name="local_ddr_cdc.sdc" />
+        <efx:sdc_file name="local_detect_key.sdc" />
+        <efx:sdc_file name="local_feature_address_cdc.sdc" />
+        <efx:inter_file name="" />
+    </efx:constraint_info>
+    <efx:sim_info />
+    <efx:misc_info />
+    <efx:ip_info>
+        <efx:ip instance_name="W0_FIFO" path="ip/W0_FIFO/settings.json">
+            <efx:ip_src_file name="W0_FIFO.v" />
+        </efx:ip>
+        <efx:ip instance_name="R0_FIFO" path="ip/R0_FIFO/settings.json">
+            <efx:ip_src_file name="R0_FIFO.v" />
+        </efx:ip>
+        <efx:ip instance_name="dsi_tx" path="ip/dsi_tx/settings.json">
+            <efx:ip_src_file name="dsi_tx.sv" />
+        </efx:ip>
+        <efx:ip instance_name="csi_rx" path="ip/csi_rx/settings.json">
+            <efx:ip_src_file name="csi_rx.sv" />
+        </efx:ip>
+        <efx:ip instance_name="DdrCtrl" path="ip/DdrCtrl/settings.json">
+            <efx:ip_src_file name="DdrCtrl.v" />
+        </efx:ip>
+        <efx:ip instance_name="W0_FIFO_8" path="ip/W0_FIFO_8/settings.json">
+            <efx:ip_src_file name="W0_FIFO_8.v" />
+        </efx:ip>
+        <efx:ip instance_name="W0_FIFO_64" path="ip/W0_FIFO_64/settings.json">
+            <efx:ip_src_file name="W0_FIFO_64.v" />
+        </efx:ip>
+        <efx:ip instance_name="FIFO_W48R24" path="ip/FIFO_W48R24/settings.json">
+            <efx:ip_src_file name="FIFO_W48R24.v" />
+        </efx:ip>
+        <efx:ip instance_name="R0_FIFO_8" path="ip/R0_FIFO_8/settings.json">
+            <efx:ip_src_file name="R0_FIFO_8.v" />
+        </efx:ip>
+        <efx:ip instance_name="R0_FIFO_16" path="ip/R0_FIFO_16/settings.json">
+            <efx:ip_src_file name="R0_FIFO_16.v" />
+        </efx:ip>
+        <efx:ip instance_name="W0_FIFO_32" path="ip/W0_FIFO_32/settings.json">
+            <efx:ip_src_file name="W0_FIFO_32.v" />
+        </efx:ip>
+    </efx:ip_info>
+    <efx:synthesis tool_name="efx_map">
+        <efx:param name="work_dir" value="work_syn" value_type="e_string" />
+        <efx:param name="write_efx_verilog" value="on" value_type="e_bool" />
+        <efx:param name="mode" value="speed" value_type="e_option" />
+        <efx:param name="max_ram" value="-1" value_type="e_integer" />
+        <efx:param name="max_mult" value="-1" value_type="e_integer" />
+        <efx:param name="infer-clk-enable" value="3" value_type="e_option" />
+        <efx:param name="infer-sync-set-reset" value="1" value_type="e_option" />
+        <efx:param name="fanout-limit" value="0" value_type="e_integer" />
+        <efx:param name="seq_opt" value="0" value_type="e_option" />
+        <efx:param name="retiming" value="0" value_type="e_option" />
+        <efx:param name="dsp-mac-packing" value="1" value_type="e_option" />
+        <efx:param name="dsp-input-regs-packing" value="1" value_type="e_option" />
+        <efx:param name="dsp-output-regs-packing" value="1" value_type="e_option" />
+        <efx:param name="bram_output_regs_packing" value="1" value_type="e_option" />
+        <efx:param name="blast_const_operand_adders" value="1" value_type="e_option" />
+        <efx:param name="operator-sharing" value="0" value_type="e_option" />
+        <efx:param name="optimize-adder-tree" value="0" value_type="e_option" />
+        <efx:param name="pack-luts-to-comb4" value="0" value_type="e_option" />
+        <efx:param name="min-sr-fanout" value="0" value_type="e_integer" />
+        <efx:param name="min-ce-fanout" value="0" value_type="e_integer" />
+        <efx:param name="seq-opt-sync-only" value="0" value_type="e_option" />
+        <efx:param name="blackbox-error" value="1" value_type="e_option" />
+        <efx:param name="allow-const-ram-index" value="0" value_type="e_option" />
+        <efx:param name="hdl-compile-unit" value="1" value_type="e_option" />
+        <efx:param name="create-onehot-fsms" value="0" value_type="e_option" />
+        <efx:param name="include" value="ip/W0_FIFO" value_type="e_string" />
+        <efx:param name="include" value="ip/R0_FIFO" value_type="e_string" />
+        <efx:param name="include" value="ip/dsi_tx" value_type="e_string" />
+        <efx:param name="include" value="ip/csi_rx" value_type="e_string" />
+        <efx:param name="include" value="ip/DdrCtrl" value_type="e_string" />
+        <efx:param name="include" value="ip/W0_FIFO_8" value_type="e_string" />
+        <efx:param name="include" value="ip/W0_FIFO_64" value_type="e_string" />
+        <efx:param name="include" value="ip/FIFO_W48R24" value_type="e_string" />
+        <efx:param name="include" value="ip/R0_FIFO_8" value_type="e_string" />
+        <efx:param name="include" value="ip/R0_FIFO_16" value_type="e_string" />
+        <efx:param name="include" value="ip/W0_FIFO_32" value_type="e_string" />
+        <efx:param name="mult-decomp-retime" value="0" value_type="e_option" />
+        <efx:param name="optimize-zero-init-rom" value="1" value_type="e_option" />
+        <efx:param name="insert-carry-skip" value="0" value_type="e_option" />
+        <efx:param name="include" value="rtl/capture" value_type="e_string" />
+    </efx:synthesis>
+    <efx:place_and_route tool_name="efx_pnr">
+        <efx:param name="work_dir" value="work_pnr" value_type="e_string" />
+        <efx:param name="verbose" value="off" value_type="e_bool" />
+        <efx:param name="load_delaym" value="on" value_type="e_bool" />
+        <efx:param name="optimization_level" value="TIMING_3" value_type="e_option" />
+        <efx:param name="seed" value="4" value_type="e_integer" />
+        <efx:param name="placer_effort_level" value="1" value_type="e_option" />
+        <efx:param name="max_threads" value="32" value_type="e_integer" />
+        <efx:param name="beneficial_skew" value="on" value_type="e_option" />
+    </efx:place_and_route>
+    <efx:bitstream_generation tool_name="efx_pgm">
+        <efx:param name="mode" value="active" value_type="e_option" />
+        <efx:param name="width" value="4" value_type="e_option" />
+        <efx:param name="cold_boot" value="off" value_type="e_bool" />
+        <efx:param name="cascade" value="off" value_type="e_option" />
+        <efx:param name="enable_roms" value="on" value_type="e_option" />
+        <efx:param name="spi_low_power_mode" value="off" value_type="e_bool" />
+        <efx:param name="io_weak_pullup" value="on" value_type="e_bool" />
+        <efx:param name="oscillator_clock_divider" value="DIV2" value_type="e_option" />
+        <efx:param name="enable_crc_check" value="on" value_type="e_bool" />
+        <efx:param name="bitstream_compression" value="on" value_type="e_bool" />
+        <efx:param name="active_capture_clk_edge" value="negedge" value_type="e_option" />
+        <efx:param name="release_tri_then_reset" value="on" value_type="e_bool" />
+        <efx:param name="enable_external_master_clock" value="off" value_type="e_bool" />
+        <efx:param name="jtag_usercode" value="0xFFFFFFFF" value_type="e_string" />
+        <efx:param name="generate_bit" value="on" value_type="e_bool" />
+        <efx:param name="generate_bitbin" value="on" value_type="e_bool" />
+        <efx:param name="generate_hex" value="on" value_type="e_bool" />
+        <efx:param name="generate_hexbin" value="on" value_type="e_bool" />
+        <efx:param name="four_byte_addressing" value="off" value_type="e_bool" />
+    </efx:bitstream_generation>
+    <efx:debugger>
+        <efx:param name="work_dir" value="work_dbg" value_type="e_string" />
+        <efx:param name="auto_instantiation" value="off" value_type="e_bool" />
+        <efx:param name="profile" value="NONE" value_type="e_string" />
+    </efx:debugger>
+    <efx:security>
+        <efx:param name="enable_bitstream_encrypt" value="off" value_type="e_bool" />
+        <efx:param name="enable_bitstream_auth" value="off" value_type="e_bool" />
+        <efx:param name="encryption_key_file" value="NONE" value_type="e_string" />
+        <efx:param name="auth_key_file" value="NONE" value_type="e_string" />
+        <efx:param name="randomize_iv_value" value="off" value_type="e_bool" />
+        <efx:param name="iv_value" value="" value_type="e_string" />
+    </efx:security>
+</efx:project>
